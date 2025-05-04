@@ -1,0 +1,33 @@
+import { FormField } from '../types'
+
+export const fields: FormField[] = [
+  { name: 'data', label: 'Data', type: 'date', required: true },
+  { name: 'turno', label: 'Turno', type: 'select', required: true, options: ['Manhã', 'Tarde', 'Noite'] },
+  { name: 'categoria', label: 'Categoria', type: 'text', required: true },
+  { name: 'atleta', label: 'Atleta', type: 'text', required: true },
+  { name: 'atividade', label: 'Atividade', type: 'text', required: true },
+  { name: 'campeonato', label: 'Campeonato', type: 'text', required: false },
+  { name: 'adversario', label: 'Adversário', type: 'text', required: false },
+  { name: 'casaFora', label: 'Casa/Fora', type: 'select', required: false, options: ['Casa', 'Fora'] },
+  { name: 'golsPro', label: 'Gols Pró', type: 'number', required: false },
+  { name: 'golsContra', label: 'Gols Contra', type: 'number', required: false },
+  { name: 'subAtividade', label: 'Sub-Atividade', type: 'text', required: false },
+  { name: 'bloco', label: 'Bloco', type: 'number', required: false },
+  { name: 'regras', label: 'Regras', type: 'textarea', required: false },
+  { name: 'larguraCampo', label: 'Largura do Campo (m)', type: 'number', required: false },
+  { name: 'profundidadeCampo', label: 'Profundidade do Campo (m)', type: 'number', required: false },
+  { name: 'atletasPorCampo', label: 'Atletas por Campo', type: 'number', required: false },
+  { name: 'duracaoBloco', label: 'Duração do Bloco', type: 'time', required: false },
+  { name: 'intervaloEntreBlocos', label: 'Intervalo entre Blocos', type: 'time', required: false },
+  { name: 'orientacoes', label: 'Orientações', type: 'textarea', required: false },
+  { name: 'numeroBlocos', label: 'Número de Blocos', type: 'number', required: false },
+  { name: 'observacoes', label: 'Observações', type: 'textarea', required: false },
+  { name: 'feedbackColetivo', label: 'Feedback Coletivo', type: 'textarea', required: false },
+  { name: 'descricaoFisico', label: 'Descrição Física', type: 'textarea', required: false },
+  { name: 'descricaoTatico', label: 'Descrição Tática', type: 'textarea', required: false },
+  { name: 'descricaoTecnico', label: 'Descrição Técnica', type: 'textarea', required: false },
+  { name: 'descricaoComportamental', label: 'Descrição Comportamental', type: 'textarea', required: false },
+  { name: 'dado', label: 'Dado', type: 'text', required: false },
+  { name: 'valorDado', label: 'Valor do Dado', type: 'number', required: false },
+]
+
